@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&family=Goldman:wght@400;700&family=Varela+Round&display=swap');
+
+
+.skillsWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 350px;
+  perspective-origin: 50% 50%;
+  color:white;
+  padding-top: -100 px ;
+}
+
+.skillsmain {
+
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vh;
+}
+
+.skillscontainer {
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+  transform-style: flat;
+  @media screen and (max-width: 960px) {
+    width: 80px;
+    height: 80px;
+    color: white;
+
+  }
+}
+
+.skillscontainer > div {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  will-change: transform;
+  cursor: pointer;
+  @media screen and (max-width: 960px) {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+  }
+}
+
+#Skills_title, #Skills_sub_title {
+    color:white;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5 vh;
+    font-family: 'Goldman', cursive;
+    letter-spacing: 0.1em;
+    transition: 0.3s;
+    text-shadow: 1px 1px 0 rgba(128, 128, 128, 0.247), 1px 2px 0 grey, 1px 3px 0 grey, 1px 4px 0 grey,
+      1px 5px 0 grey, 1px 6px 0 grey, 1px 7px 0 grey, 1px 8px 0 grey,
+      5px 13px 15px black;
+
+      @media screen and (max-width: 500px) {
+       
+        font-size: 20 vh;
+      }
+
+  }
+  
+  #Skills_title:hover {
+    transition: 0.3s;
+    transform: scale(1.1)translate(-45%, -45%);
+    text-shadow: 1px -1px 0 grey, 1px -2px 0 grey, 1px -3px 0 grey,
+      1px -4px 0 grey, 1px -5px 0 grey, 1px -6px 0 grey, 1px -7px 0 grey,
+      1px -8px 0 grey, 5px -13px 15px black, 5px -13px 25px #808080;
+  }
+
+h2 {
+    font-size: 1.5vw;
+    font-family: 'Goldman', cursive;
+    padding-bottom: 1vh;
+  
+}
+#Skills_sub_title{
+    font-size: 3vw;
+    left: 20%;
+    padding-top: 12vh;
+}
